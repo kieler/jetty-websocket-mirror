@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: KIELER Websocket Mirror
+Bundle-SymbolicName: de.cau.cs.kieler.websocket.mirror
+Bundle-Version: 10.0.5
+Automatic-Module-Name: de.cau.cs.kieler.websocket.mirror
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ClassPath: lib/websocket-jetty-server-10.0.5.jar,
+ lib/websocket-jetty-api-10.0.5.jar
+Export-Package: org.eclipse.jetty.websocket.api,
+ org.eclipse.jetty.websocket.api.annotations,
+ org.eclipse.jetty.websocket.api.exceptions,
+ org.eclipse.jetty.websocket.api.util,
+ org.eclipse.jetty.websocket.server,
+ org.eclipse.jetty.websocket.server.config,
+ org.eclipse.jetty.websocket.server.internal

@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>de.cau.cs.kieler.websocket.mirror.p2</groupId>
+		<artifactId>plugins</artifactId>
+		<version>0.1.0</version>
+	</parent>
+
+	<artifactId>de.cau.cs.kieler.websocket.mirror</artifactId>
+	<packaging>eclipse-plugin</packaging>
+	<version>${jettyVersion}</version>
+
+	<properties>
+		<!-- Adapt this to a version found on https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-maven-plugin/ -->
+		<jettyVersion>10.0.5</jettyVersion>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.jetty.websocket</groupId>
+			<artifactId>websocket-jetty-server </artifactId>
+			<version>${jettyVersion}</version>
+		</dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty.websocket</groupId>
+            <artifactId>websocket-jetty-api </artifactId>
+            <version>${jettyVersion}</version>
+        </dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Copy the stated dependencies to the lib folder. -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<configuration>
+					<outputDirectory>lib</outputDirectory>
+					<excludeTransitive>true</excludeTransitive>
+					<includeGroupIds>org.eclipse.jetty.websocket</includeGroupIds>
+					<includeScope>runtime</includeScope>
+				</configuration>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-source-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>plugin-source</id>
+						<goals>
+							<goal>plugin-source</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

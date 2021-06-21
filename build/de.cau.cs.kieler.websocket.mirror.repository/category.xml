@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+
+   <description name="KIELER Websocket Mirror">
+      Update site for KIELER mirror of the Jetty Websocket library.
+   </description>
+   
+   <bundle id="de.cau.cs.kieler.websocket.mirror"/>
+
+</site>
