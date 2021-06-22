@@ -38,7 +38,7 @@
 				<artifactId>maven-dependency-plugin</artifactId>
 				<configuration>
 					<outputDirectory>lib</outputDirectory>
-					<excludeTransitive>true</excludeTransitive>
+					<excludeTransitive>false</excludeTransitive>
 					<includeGroupIds>org.eclipse.jetty.websocket</includeGroupIds>
 					<includeScope>runtime</includeScope>
 				</configuration>

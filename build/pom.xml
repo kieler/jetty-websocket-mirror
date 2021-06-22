@@ -10,8 +10,8 @@
 
   <!-- Define a few properties used throughout all build profiles. -->
   <properties>
-    <tycho-version>1.2.0</tycho-version>
-    <targetJdk>1.8</targetJdk>
+    <tycho-version>1.7.0</tycho-version>
+    <targetJdk>11</targetJdk>
   </properties>
 
   <modules>
