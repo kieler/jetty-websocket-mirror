@@ -14,7 +14,7 @@
 
 	<properties>
 		<!-- Adapt this to a version found on https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-maven-plugin/ -->
-		<jettyVersion>10.0.5</jettyVersion>
+		<jettyVersion>10.0.9</jettyVersion>
 	</properties>
 
 	<dependencies>
