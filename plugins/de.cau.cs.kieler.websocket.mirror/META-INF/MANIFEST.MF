@@ -2,15 +2,15 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: KIELER Websocket Mirror
 Bundle-SymbolicName: de.cau.cs.kieler.websocket.mirror
-Bundle-Version: 10.0.11
+Bundle-Version: 10.0.15
 Automatic-Module-Name: de.cau.cs.kieler.websocket.mirror
 Bundle-RequiredExecutionEnvironment: JavaSE-11
-Bundle-ClassPath: lib/websocket-jetty-server-10.0.11.jar,
- lib/websocket-jetty-api-10.0.11.jar,
- lib/websocket-core-common-10.0.11.jar,
- lib/websocket-core-server-10.0.11.jar,
- lib/websocket-jetty-common-10.0.11.jar,
- lib/websocket-servlet-10.0.11.jar
+Bundle-ClassPath: lib/websocket-jetty-server-10.0.15.jar,
+ lib/websocket-jetty-api-10.0.15.jar,
+ lib/websocket-core-common-10.0.15.jar,
+ lib/websocket-core-server-10.0.15.jar,
+ lib/websocket-jetty-common-10.0.15.jar,
+ lib/websocket-servlet-10.0.15.jar
 Export-Package: org.eclipse.jetty.websocket.api,
  org.eclipse.jetty.websocket.api.annotations,
  org.eclipse.jetty.websocket.api.exceptions,
@@ -20,9 +20,9 @@ Export-Package: org.eclipse.jetty.websocket.api,
  org.eclipse.jetty.websocket.server.internal
 Import-Package: javax.servlet;version="3.1.0",
  javax.servlet.http;version="3.1.0"
-Require-Bundle: org.eclipse.jetty.server;bundle-version="10.0.11",
- org.eclipse.jetty.http;bundle-version="10.0.11",
- org.eclipse.jetty.servlet;bundle-version="10.0.11",
- org.eclipse.jetty.util;bundle-version="10.0.11",
- org.eclipse.jetty.io;bundle-version="10.0.11",
+Require-Bundle: org.eclipse.jetty.server;bundle-version="10.0.15",
+ org.eclipse.jetty.http;bundle-version="10.0.15",
+ org.eclipse.jetty.servlet;bundle-version="10.0.15",
+ org.eclipse.jetty.util;bundle-version="10.0.15",
+ org.eclipse.jetty.io;bundle-version="10.0.15",
  org.slf4j.api;bundle-version="1.7.30"
