@@ -10,11 +10,11 @@
 
 	<artifactId>de.cau.cs.kieler.websocket.mirror</artifactId>
 	<packaging>eclipse-plugin</packaging>
-	<version>${jettyVersion}</version>
+	<version>10.0.18</version>
 
 	<properties>
 		<!-- Adapt this to a version found on https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-maven-plugin/ -->
-		<jettyVersion>10.0.15</jettyVersion>
+		<jettyVersion>10.0.18</jettyVersion>
 	</properties>
 
 	<dependencies>
