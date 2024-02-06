@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry exported="true" kind="lib" path="lib/jetty-http-10.0.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jetty-io-10.0.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jetty-security-10.0.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jetty-server-10.0.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jetty-servlet-10.0.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jetty-servlet-api-4.0.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jetty-util-10.0.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jetty-webapp-10.0.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jetty-xml-10.0.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/websocket-core-common-10.0.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/websocket-core-server-10.0.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/websocket-jetty-api-10.0.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/websocket-jetty-common-10.0.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/websocket-jetty-server-10.0.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/websocket-servlet-10.0.20.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
-	<classpathentry exported="true" kind="lib" path="lib/websocket-core-common-10.0.18.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/websocket-core-server-10.0.18.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/websocket-jetty-common-10.0.18.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/websocket-servlet-10.0.18.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/websocket-jetty-api-10.0.18.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/websocket-jetty-server-10.0.18.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

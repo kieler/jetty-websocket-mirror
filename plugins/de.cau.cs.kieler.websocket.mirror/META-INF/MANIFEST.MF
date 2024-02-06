@@ -1,17 +1,62 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: KIELER Websocket Mirror
-Bundle-SymbolicName: de.cau.cs.kieler.websocket.mirror
-Bundle-Version: 10.0.18
+Bundle-SymbolicName: de.cau.cs.kieler.websocket.mirror;singleton:=true
+Bundle-Version: 10.0.20
 Automatic-Module-Name: de.cau.cs.kieler.websocket.mirror
+Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-11
-Bundle-ClassPath: lib/websocket-jetty-server-10.0.18.jar,
- lib/websocket-jetty-api-10.0.18.jar,
- lib/websocket-core-common-10.0.18.jar,
- lib/websocket-core-server-10.0.18.jar,
- lib/websocket-jetty-common-10.0.18.jar,
- lib/websocket-servlet-10.0.18.jar
-Export-Package: org.eclipse.jetty.websocket.api,
+Bundle-ClassPath: lib/jetty-http-10.0.20.jar,
+ lib/jetty-io-10.0.20.jar,
+ lib/jetty-security-10.0.20.jar,
+ lib/jetty-server-10.0.20.jar,
+ lib/jetty-servlet-10.0.20.jar,
+ lib/jetty-servlet-api-4.0.6.jar,
+ lib/jetty-util-10.0.20.jar,
+ lib/jetty-webapp-10.0.20.jar,
+ lib/jetty-xml-10.0.20.jar,
+ lib/websocket-core-common-10.0.20.jar,
+ lib/websocket-core-server-10.0.20.jar,
+ lib/websocket-jetty-api-10.0.20.jar,
+ lib/websocket-jetty-common-10.0.20.jar,
+ lib/websocket-jetty-server-10.0.20.jar,
+ lib/websocket-servlet-10.0.20.jar
+Export-Package: javax.servlet,
+ javax.servlet.annotation,
+ javax.servlet.descriptor,
+ javax.servlet.http,
+ org.eclipse.jetty.http,
+ org.eclipse.jetty.http.compression,
+ org.eclipse.jetty.http.pathmap,
+ org.eclipse.jetty.io,
+ org.eclipse.jetty.io.jmx,
+ org.eclipse.jetty.io.ssl,
+ org.eclipse.jetty.security,
+ org.eclipse.jetty.security.authentication,
+ org.eclipse.jetty.server,
+ org.eclipse.jetty.server.handler,
+ org.eclipse.jetty.server.handler.gzip,
+ org.eclipse.jetty.server.handler.jmx,
+ org.eclipse.jetty.server.jmx,
+ org.eclipse.jetty.server.resource,
+ org.eclipse.jetty.server.session,
+ org.eclipse.jetty.servlet,
+ org.eclipse.jetty.servlet.jmx,
+ org.eclipse.jetty.servlet.listener,
+ org.eclipse.jetty.util,
+ org.eclipse.jetty.util.annotation,
+ org.eclipse.jetty.util.component,
+ org.eclipse.jetty.util.compression,
+ org.eclipse.jetty.util.log,
+ org.eclipse.jetty.util.preventers,
+ org.eclipse.jetty.util.resource,
+ org.eclipse.jetty.util.security,
+ org.eclipse.jetty.util.ssl,
+ org.eclipse.jetty.util.statistic,
+ org.eclipse.jetty.util.thread,
+ org.eclipse.jetty.util.thread.strategy,
+ org.eclipse.jetty.webapp,
+ org.eclipse.jetty.websocket.api,
  org.eclipse.jetty.websocket.api.annotations,
  org.eclipse.jetty.websocket.api.exceptions,
  org.eclipse.jetty.websocket.api.util,
@@ -26,11 +71,6 @@ Export-Package: org.eclipse.jetty.websocket.api,
  org.eclipse.jetty.websocket.server,
  org.eclipse.jetty.websocket.server.config,
  org.eclipse.jetty.websocket.server.internal,
- org.eclipse.jetty.websocket.servlet
-Import-Package: jakarta.servlet;version="5.0.0",
- jakarta.servlet.http;version="5.0.0"
-Require-Bundle: org.eclipse.jetty.server;bundle-version="[10.0.18,11.0.0)";visibility:=reexport,
- org.eclipse.jetty.http;bundle-version="[10.0.18,11.0.0)",
- org.eclipse.jetty.servlet;bundle-version="[10.0.18,11.0.0)",
- org.eclipse.jetty.util;bundle-version="[10.0.18,11.0.0)",
- org.eclipse.jetty.io;bundle-version="[10.0.18,11.0.0)"
+ org.eclipse.jetty.websocket.servlet,
+ org.eclipse.jetty.xml
+Import-Package: org.slf4j;version="1.7.30"

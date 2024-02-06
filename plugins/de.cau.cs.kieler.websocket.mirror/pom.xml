@@ -10,22 +10,47 @@
 
 	<artifactId>de.cau.cs.kieler.websocket.mirror</artifactId>
 	<packaging>eclipse-plugin</packaging>
-	<version>10.0.18</version>
+	<version>10.0.20</version>
 
 	<properties>
 		<!-- Adapt this to a version found on https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-maven-plugin/ -->
-		<jettyVersion>10.0.18</jettyVersion>
+		<jettyVersion>10.0.20</jettyVersion>
 	</properties>
 
 	<dependencies>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>${jettyVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>${jettyVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-http</artifactId>
+            <version>${jettyVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-io</artifactId>
+            <version>${jettyVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-util</artifactId>
+            <version>${jettyVersion}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.eclipse.jetty.websocket</groupId>
-			<artifactId>websocket-jetty-server </artifactId>
+			<artifactId>websocket-jetty-server</artifactId>
 			<version>${jettyVersion}</version>
 		</dependency>
         <dependency>
             <groupId>org.eclipse.jetty.websocket</groupId>
-            <artifactId>websocket-jetty-api </artifactId>
+            <artifactId>websocket-jetty-api</artifactId>
             <version>${jettyVersion}</version>
         </dependency>
 	</dependencies>
@@ -39,7 +64,7 @@
 				<configuration>
 					<outputDirectory>lib</outputDirectory>
 					<excludeTransitive>false</excludeTransitive>
-					<includeGroupIds>org.eclipse.jetty.websocket</includeGroupIds>
+					<includeGroupIds>org.eclipse.jetty.websocket,org.eclipse.jetty</includeGroupIds>
 					<includeScope>runtime</includeScope>
 				</configuration>
 				<executions>
